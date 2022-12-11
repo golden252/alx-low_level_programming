@@ -8,19 +8,19 @@
 
 int main(void)
 {
-	int slts = 'a';
-	while (slts <= 'z')
-	{
-		if (slts == 'e' || slts == 'q')
-		{
-			slts += 1;
-		}
-		else
-		{
-			putchar(slts);
-			slts += 1;
-		}
-	}
-	putchar('\n');
-	return (0);
+int slts = 'a';
+while (slts <= 'z')
+{
+if (slts == 'e' || slts == 'q')
+{
+slts += 1;
+}
+else
+{
+putchar(slts);
+slts += 1;
+}
+}
+putchar('\n');
+return (0);
 }
