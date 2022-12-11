@@ -6,14 +6,15 @@
  * You can only use the putchar function
  * Return: 0
  */
+
 int main(void)
 {
-	int n = 'a';
-	while (n <= 'z')
-	{
-		putchar(n);
-		n += 1;
-	}
-	putchar('\n');
-	return (0);
+int n = 'a';
+while (n <= 'z')
+{
+putchar(n);
+n += 1;
+}
+putchar('\n');
+return (0);
 }
