@@ -1,24 +1,14 @@
 #include "main.h"
 
 /**
- * print_line - function that draws a straight line in the terminal
- * @n: input number of times to print '_'
- * Return: straight line
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
-void print_line(int n)
+void print_alphabet(void)
 {
-	int co;
+	char letter;
 
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (co = 1; co <= n; co++)
-		{
-			putchar('');
-		}
-		_putchar('\n');
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
