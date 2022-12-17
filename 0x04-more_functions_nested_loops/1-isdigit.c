@@ -1,22 +1,19 @@
 #include "main.h"
 
 /**
- * _isupper - Entry point.
+ * _isdigit - check if numbers are 0 - 9
  *
- * @c: input character.
+ * @c: char to check.
  *
- * Description: checks for uppercase character.
+ * Description: checks for a digit.
  *
- * Return: Always 0 (Success)
+ * Return: 1 if c is a digit, 0 otherwise.
  */
-int _isupper(int c)
+
+int _isdigit(int c)
 {
-if (c >= 65 && c <= 90)
-{
+if ((c >= 48) && (c <= 57))
 return (1);
-}
 else
-{
 return (0);
-}
 }
