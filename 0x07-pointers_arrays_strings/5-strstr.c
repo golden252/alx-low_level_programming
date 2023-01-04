@@ -15,4 +15,21 @@ char *_strstr(char *s1, char *s2)
 		size++;
 	}
 
+	while (*s1 != 0)
+	{
+		unsigned int y = 0;
 
+		for (x = 0; x < size; x++)
+		{
+			if (*(s1 + x) == *(s2 + x))
+				y++;
+		}
+		if (y == size)
+		{
+			return (s1);
+		}
+		s1++;
+	}
+
+	return (0);
+}
