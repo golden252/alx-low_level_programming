@@ -15,4 +15,16 @@ int _strcmp(char *s1, char *s2)
 	while (*(s1 + x) != '\0')
 	{
 		if (*(s1 + x) > *(s2 + x))
-
+		{
+			ltr = *(s1 + x) - *(s2 + x);
+			return (ltr);
+		}
+		else if (*(s1 + x) < *(s2 + x))
+		{
+			ltr = *(s1 + x) - *(s2 + x);
+			return (ltr);
+		}
+		x += 1;
+	}
+	return (0);
+}
