@@ -9,6 +9,7 @@
 
 int main(_attribute_((unused)))
 {
-printf("%s\n", __FILE__);
-return (0);
+	printf("%s\n",_FILE_);
+
+		return (0);
 }
