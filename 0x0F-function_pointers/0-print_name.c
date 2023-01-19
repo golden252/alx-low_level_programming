@@ -1,4 +1,4 @@
-nclude "function_pointers.h"
+#include "function_pointers.h"
 #include <stdlib.h>
 
 /**
@@ -10,9 +10,8 @@ nclude "function_pointers.h"
 
 void print_name(char *name, void (*f)(char *))
 {
-		if (!f)
-				{
-							return;
-								}
-			f(name);
+if (!f)
+{
+return;
+}f(name);
 }
